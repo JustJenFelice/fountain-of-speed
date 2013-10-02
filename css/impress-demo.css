@@ -96,6 +96,7 @@ h6, .h6 { font-size: 32px }
 .fat { margin-top: 4em }
 .chubby, .slide .chubby { margin-top: 2em }
 .highlight { background-color: rgba(150,150,150,0.4); }
+.smaller-text { font-size: 0.8em; }
 
 
 /*  Global Animation Classes
@@ -108,8 +109,8 @@ h6, .h6 { font-size: 32px }
 /* To keep visible after they have shown */
 #step-2.past .easein, #step-2.past .animatein-left, #step-8.past .easein, #step-8.past .animatein-left, #step-9.past .animatein-left, #step-23.past .delay, #step-27.past .easein, #step-27.past .animatein-left { display: inline-block }
 
-/* Crappy hack */
-#step-8 li { margin-bottom: 0.3em; }
+/* Crappy hacks */
+#step-8 li, #step-29 li { margin-bottom: 0.3em; }
 
 .present.shrink { display: inline-block; -webkit-transform: scale(0.7); -moz-transform: scale(0.7); -ms-transform: scale(0.7); -o-transform: scale(0.7); transform: scale(0.7); -webkit-transition-duration: 1s; -moz-transition-duration: 1s; -ms-transition-duration: 1s; -o-transition-duration: 1s; transition-duration: 1s; -webkit-transition-delay: 2.0s; -moz-transition-delay: 2.0s; -ms-transition-delay: 2.0s; -o-transition-delay: 2.0s; transition-delay: 2.0s; }
 
@@ -287,10 +288,10 @@ h6, .h6 { font-size: 32px }
     /*margin: 0;*/
     visibility: hidden;
     margin-top: -1000px;
-    -webkit-animation: sliding_ins 1s 4s linear;
-    -moz-animation: sliding_ins 1s 4s linear;
-    -o-animation: sliding_ins 1s 4s linear;
-    animation: sliding_ins 1s 4s linear;
+    -webkit-animation: sliding_ins 1s 3s linear;
+    -moz-animation: sliding_ins 1s 3s linear;
+    -o-animation: sliding_ins 1s 3s linear;
+    animation: sliding_ins 1s 3s linear;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
     -o-animation-fill-mode: forwards;
@@ -319,10 +320,10 @@ h6, .h6 { font-size: 32px }
     /*margin: 0;*/
     visibility: hidden;
     margin-left: -1000px;
-    -webkit-animation: sliding_in 1s 5s linear;
-    -moz-animation: sliding_in 1s 5s linear;
-    -o-animation: sliding_in 1s 5s linear;
-    animation: sliding_in 1s 5s linear;
+    -webkit-animation: sliding_in 1s 4s linear;
+    -moz-animation: sliding_in 1s 4s linear;
+    -o-animation: sliding_in 1s 4s linear;
+    animation: sliding_in 1s 4s linear;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
     -o-animation-fill-mode: forwards;
