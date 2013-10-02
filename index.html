@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>The Fountain of Speed</title>
+        <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+        <meta name="author" content="Bartek Szopka" />
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+        <link href="css/impress-demo.css" rel="stylesheet" />
+        <!--link href="css/impressConsole.css" rel="stylesheet" /-->
+        <!--link href="css/tomorrow-night.css" rel="stylesheet" / -->
+        <link rel="shortcut icon" href="favicon.png" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    </head>
+    <body class="impress-not-supported">
+        <!--
+        For example this fallback message is only visible when there is `impress-not-supported` class on body.
+        -->
+        <div class="fallback-message">
+            <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+            <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+        </div>
+        <div id="impress">
+
+<!-- slide -->
+            <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+                <h1>The Fountain of Speed:</h1>
+                <h2>Simple Tricks to Optimize your HTML and CSS</h2>
+                <img src="img/ALA371_improveux_300_1_960_439_60.jpg" class="img-responsive">
+            </div>
+
+<!-- slide -->
+            <div class="step slide" data-x="0" data-y="-1500">
+                <h1>Who am I?</h1>
+                <hr>
+                <div class="viewport pull-left">
+                    <img src="img/femalecodertocat.png" class="img-responsive animatein-left">
+                </div>
+                <div class="pull-left clearfix viewport">
+                    <div class="easein">
+                        <h3 class="text-primary">Jennifer Hageman</h3>
+                        <p class="text-muted">Interactive Developer</p>
+                        <br>
+                        <p>jhageman@egov.com</p>
+                        <p>@JustJenFelice</p>
+                    </div>
+                </div>
+
+            </div>
+            <!--div class="step slide" data-x="1000" data-y="-1500">
+            <q>Why worry about front-end code?</q>
+        </div-->
+
+<!-- slide -->
+        <div id="title" class="step" data-x="500" data-y="-3500" data-scale="4">
+            <p class="try">Your users will give your page</p>
+            <h1>2 seconds</h1>
+            <p class="text-center">to load</p>
+            <p class="footnote">(no joke - that's all you get)</p>
+        </div>
+
+<!-- slide -->
+        <div id="going" class="step" data-x="-550" data-y="3000" data-rotate="90" data-scale="3">
+            <p>After <strong>3 seconds</strong> <br>up to
+            <strong>40%</strong> will simply<br><strong>leave</strong></p>
+            <p class="annotation">(http://www.gomez.com/pdfs/wp_why_web_performance_matters.pdf<br>http://www.websiteoptimization.com/speed/tweak/psychology-web-performance/)</p>
+        </div>
+
+<!-- slide -->
+        <div id="big" class="step slide" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+            <p>Your window of opportunity is <span class="thoughts">small</span></p>
+            <img src="img/Window_transparent_PNG_by_AbsurdWordPreferred.png" class="img-responsive img-halfsies">
+        </div>
+
+<!-- slide -->
+        <div id="tiny" class="step" data-x="3225" data-y="1825" data-z="-3000" data-rotate="300" data-scale="1">
+            <p>and <b>getting</b> <b class="shrink">smaller</b></p>
+        </div>
+
+<!-- slide -->
+        <div id="ing" class="step" data-x="2500" data-y="11050" data-rotate="270" data-scale="6">
+            <p><b class="positioning">So...</b>
+            <br>What do we<b class="scaling">do</b>?
+            <br>Where do we<b class="scaling">start</b>?
+            </p>
+        </div>
+
+<!-- slide 8 -->
+        <div id="step-8" class="step slide" data-x="7700" data-y="-2800" data-scale="6">
+            <div class="viewport pull-left">
+                <img src="img/codefailcat.png" class="img-responsive animatein-left">
+            </div>
+            <div class="pull-left clearfix viewport">
+                <div class="easein">
+                    <h3>GitHub Case Study</h3>
+                    <p class="text-primary">Massive performance problems lead GitHub to reevaluate their entire front-end codebase.</p>
+                    <ul>
+                        <li>+ 80% of pageload time being caused by style recalculation</li>
+                        <li>Style recalculation alone was adding 28.16 sec. to load times that averaged over 30 seconds</li>
+                    </ul>
+                    <p class="text-primary">Published December, 2012</p>
+                </div>
+            </div>
+        </div>
+
+<!-- slide 9 -->
+        <div class="step slide big" data-x="15500" data-y="6400" data-rotate="-180" data-scale="6">
+            <b>The Beast We're Fighting</b>
+            <div>
+                <img src="img/beast1.png" class="img-responsive img-halfsies animatein-left">
+            </div>
+        </div>
+
+<!-- slide 10 -->
+        <div class="step slide" data-x="15500" data-y="11100" data-rotate="-180" data-scale="6">
+            <h1>Browser Voodoo Magic</h1>
+            <hr>
+            <img src="img/webkitflow.png.pagespeed.ce.KhQEkvbb3q.png" class="img-responsive center-block fat bigger">
+        </div>
+
+<!-- slide 11 -->
+        <div class="step slide" data-x="15500" data-y="16100" data-rotate="-180" data-scale="6">
+            <h1>Render Process</h1>
+            <hr>
+            <img src="img/flow.png" class="img-responsive center-block fat bigger">
+            <div class="notes">The most important thing to know is the browser:
+                <ol>
+                    <li>First parses the HTML to identify the DOM elements</li>
+                    <li>Then constructs the render tree to identify the structure of the DOM as the elements relate to each other</li>
+                    <li>Then the browser begins to identify what styles apply to the various elements of the DOM and constructs the Render Tree with that information</li>
+                    <li>The browser then begins to actually layout the document framework with that information, much like the skeleton of the page</li>
+                    <li>Finally, the browser begins to paint pixels onto the tree</li>
+                    <li>BUT IT DOESN'T END THERE</li>
+                    <li>The browser will often times be asked to recalculate styles, which starts the process all over again</li>
+                </ol>
+            </div>
+        </div>
+
+<!-- slide 12 -->
+        <div class="step slide" data-x="7500" data-y="16100" data-rotate="-180" data-scale="6">
+            <h2>Causes of Style Recalculation</h2>
+            <hr>
+            <ul class="center-block chubby">
+                <li>Manipulating the DOM</li>
+                <li>Hiding elements using display: none; and visibility: hidden;</li>
+                <li>CSS animations</li>
+                <li>User Actions</li>
+                <li>Dynamic Elements</li>
+            </ul>
+        </div>
+
+<!-- slide 13 -->
+        <div id="its-in-3d" class="step" data-x="-6200" data-y="14300" data-z="-200" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+            <p><span class="have">So</span><span class="you">...</span><span class="noticed">is</span> <span class="its">style</span> <span class="in">recalculation</span> <b>bad<sup>*</sup></b>?</p>
+            <span class="footnote">* When in excess, of course.</span>
+        </div>
+
+<!-- slide 14 -->
+        <div class="step" data-x="-8200" data-y="18300" data-z="200" data-rotate-x="-140" data-rotate-y="10" data-scale="2">
+            <img src="img/google_chrome_crash_error.png" "img-responsive center-block">
+        </div>
+
+<!-- slide 15 -->
+        <div class="step slide" data-x="19300" data-y="-3000" data-rotate="20" data-scale="2">
+            <h1>The Nightmare</h1>
+            <img src="img/css.gif" class="img-responsive center-block chubby">
+        </div>
+
+<!-- slide -->
+        <div class="step slide" data-x="9300" data-y="4000" data-rotate="20" data-scale="4">
+            <h2>Unnecessary tag identifiers</h2>
+            <hr>
+            <div class="viewport pull-left">
+                <!--?prettify lang=css?-->
+<pre class="prettyprint chubby">
+<code>
+<div class="highlight inline-block">ul</div>#main-nav li,
+<div class="highlight inline-block">li</div>.menu {
+    color: #333;
+}
+</code>
+</pre>
+            </div>
+            <div class="viewport pull-left delay-top clearfix">
+                <!--?prettify lang=css?-->
+<pre class="prettyprint chubby">
+<code>
+#main-nav li,
+.menu {
+    color: #333;
+}
+</code>
+</pre>
+            </div>
+        </div>
+
+<!-- slide -->
+        <div class="step slide" data-x="20300" data-y="2000" data-rotate="20" data-scale="4">
+            <h2>Ancestors</h2>
+            <hr>
+            <div class="viewport pull-left">
+                <!--?prettify lang=css?-->
+<pre class="prettyprint chubby">
+<code>
+<div class="highlight inline-block">html div table tr</div> td {
+    margin: 0;
+}
+</code>
+</pre>
+            </div>
+            <div class="viewport pull-left delay-top clearfix">
+                <!--?prettify lang=css?-->
+<pre class="prettyprint chubby">
+<code>
+td {
+    margin: 0;
+}
+</code>
+</pre>
+            </div>
+        </div>
+
+<!-- slide -->
+        <div class="step slide" data-x="24300" data-y="3500" data-rotate="20" data-scale="4">
+            <h2>Universal Selectors &amp;<br>Unqualified Selectors</h2>
+            <hr>
+            <div class="viewport pull-left">
+                <!--?prettify lang=css?-->
+<pre class="prettyprint chubby">
+<code>
+* {
+    margin: 0;
+}
+
+[class^=&quot;mini-icon-&quot;] {
+    background: url(&#039;../img/logo.png&#039;) no-repeat;
+    background-position: -200px -60px;
+}
+</code>
+</pre>
+            </div>
+            <div class="viewport pull-left delay-top clearfix">
+                <!--?prettify lang=html?-->
+<pre class="prettyprint chubby">
+<code>
+Don&#039;t do it
+:)
+</code>
+</pre>
+            </div>
+        </div>
+
+<!-- slide -->
+        <div class="step slide" data-x="28700" data-y="5000" data-rotate="20" data-scale="4">
+            <h2>Selector Chaining</h2>
+            <hr>
+            <div class="center-block">
+                <div class="viewport pull-left">
+                    <!--?prettify lang=css?-->
+<pre class="prettyprint chubby">
+<code>
+<div class="highlight inline-block">.big .hairy</div> .deal {
+    margin: 0;
+}
+</code>
+</pre>
+                </div>
+                <div class="viewport pull-left delay-top clearfix">
+                    <!--?prettify lang=css?-->
+<pre class="prettyprint chubby">
+<code>
+.big-hairy-deal {
+    margin: 0;
+}
+</code>
+</pre>
+                </div>
+            </div>
+            <div class="chubby inline-block">
+                <p><b>Important</b> - when you <em>do</em> chain, the order of chained classes determines where  the browser will index the rule.</p>
+            </div>
+        </div>
+
+<!-- slide -->
+        <div class="step slide" data-x="6000" data-y="7000" data-scale="2">
+            <h2>Chained Selector Handling</h2>
+            <hr>
+            <ul>
+                <li class="step-first"><code class="prettyprint lang-css">.big .hairy .deal { color: #333; }</code> is indexed under <strong>class rules</strong> key <code class="prettyprint lang-css">.big</code></li>
+                <li class="step-second"><code class="prettyprint lang-css">input[type=text].error { color: #900; }</code> is indexed in <strong>tag rules</strong>, but <code class="prettyprint lang-css">input.error[type=text] { color: #900; }</code> is indexed under <strong>class rules</strong> key <code class="prettyprint lang-css">.error</code></li>
+                <li class="step-third"><code class="prettyprint lang-css">.big#hairy-deal { color: #333; }</code> is indexed under <strong>class rules</strong> key <code class="prettyprint lang-css">.big</code> but <code class="prettyprint lang-css">#hairy-deal.big { color: #333; }</code> is indexed under <strong>ID rules</strong> key <code class="prettyprint lang-css">#hairy-deal</code></li>
+            </ul>
+        </div>
+
+<!-- slide -->
+        <div class="step slide" data-x="28000" data-y="1100" data-rotate="180" data-scale="4">
+            <h1>Partners in Render Crime</h1>
+            <hr>
+            <div class="inline-block">
+                <img src="img/lurv.png" class="img-responsive">
+            </div>
+        </div>
+
+<!-- slide -->
+        <div class="step slide" data-x="8000" data-y="1100" data-rotate="180" data-scale="2">
+            <h1>HTML</h1>
+            <hr>
+            <img src="img/hell.jpg" class="img-responsive center-block chubby">
+        </div>
+
+<!-- slide 23 -->
+        <div class="step slide html" data-x="15300" data-y="2200" data-rotate="90" data-scale="1">
+            <h2>Unnecessary &lt;div&gt;s</h2>
+            <div class="pull-left clearfix">
+                <!--?prettify lang=html?-->
+<pre class="prettyprint">
+<code>
+&lt;tr&gt;
+    &lt;td class=&quot;line_number&quot;&gt;&lt;a id=&quot;L1L5&quot; href=&quot;#L1L5&quot;&gt;5&lt;/a&gt;&lt;/td&gt;
+    &lt;td class=&quot;line_number&quot;&gt;&lt;a id=&quot;L1R7&quot; href=&quot;#L1R7&quot;&gt;7&lt;/a&gt;&lt;/td&gt;
+    &lt;td width=&quot;100%&quot;&gt;
+    &lt;div class=&quot;add-bubble&quot;&gt;&lt;/div&gt;
+    &lt;pre&gt;<div class="highlight inline-block">&lt;div&gt;</div>+this is a line in the diff<div class="highlight inline-block">&lt;/div&gt;</div>&lt;/pre&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+</code>
+</pre>
+            </div>
+            <div class="pull-left clearfix delay">
+                <!--?prettify lang=html?-->
+<pre class="prettyprint">
+<code>
+&lt;tr&gt;
+    &lt;td class=&quot;line_number&quot;&gt;&lt;a id=&quot;L1L5&quot; href=&quot;#L1L5&quot;&gt;5&lt;/a&gt;&lt;/td&gt;
+    &lt;td class=&quot;line_number&quot;&gt;&lt;a id=&quot;L1R7&quot; href=&quot;#L1R7&quot;&gt;7&lt;/a&gt;&lt;/td&gt;
+    &lt;td width=&quot;100%&quot;&gt;
+    &lt;div class=&quot;add-bubble&quot;&gt;&lt;/div&gt;
+    &lt;pre&gt;+this is a line in the diff&lt;/pre&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+</code>
+</pre>
+            </div>
+        </div>
+
+<!-- slide 24 -->
+        <div class="step slide html" data-x="14200" data-y="2200" data-rotate="120" data-scale="1">
+            <h2>Unnecessary &lt;a&gt;s</h2>
+            <div class="pull-left clearfix">
+                <!--?prettify lang=html?-->
+<pre class="prettyprint">
+<code>
+&lt;tr&gt;
+    &lt;td class=&quot;line_number&quot;&gt;<div class="highlight inline-block">&lt;a id=&quot;L1L5&quot; href=&quot;#L1L5&quot;&gt;</div>5<div class="highlight inline-block">&lt;/a&gt;</div>&lt;/td&gt;
+    &lt;td class=&quot;line_number&quot;&gt;<div class="highlight inline-block">&lt;a id=&quot;L1R7&quot; href=&quot;#L1R7&quot;&gt;</div>7<div class="highlight inline-block">&lt;/a&gt;</div>&lt;/td&gt;
+    &lt;td width=&quot;100%&quot;&gt;
+        &lt;div class=&quot;add-bubble&quot;&gt;&lt;/div&gt;
+        &lt;pre&gt;+this is a line in the diff&lt;/pre&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+</code>
+</pre>
+            </div>
+            <div class="pull-left clearfix delay">
+                <!--?prettify lang=html?-->
+<pre class="prettyprint">
+<code>
+&lt;tr&gt;
+    &lt;td class=&quot;line_number linkable-line-number&quot;&gt;5&lt;/td&gt;
+    &lt;td class=&quot;line_number linkable-line-number&quot;&gt;7&lt;/td&gt;
+    &lt;td width=&quot;100%&quot;&gt;
+        &lt;div class=&quot;add-bubble&quot;&gt;&lt;/div&gt;
+        &lt;pre&gt;+this is a line in the diff&lt;/pre&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+</code>
+</pre>
+            </div>
+        </div>
+
+<!-- slide 25 -->
+        <div class="step slide html" data-x="13300" data-y="3000" data-rotate="150" data-scale="1">
+            <h2>Magical &lt;b&gt; element</h2>
+            <div class="pull-left clearfix">
+                <!--?prettify lang=html?-->
+<pre class="prettyprint">
+<code>
+&lt;tr&gt;
+    &lt;td class=&quot;line_number linkable-line-number&quot;&gt;5&lt;/td&gt;
+    &lt;td class=&quot;line_number linkable-line-number&quot;&gt;7&lt;/td&gt;
+    &lt;td width=&quot;100%&quot;&gt;
+        <div class="highlight inline-block">&lt;div class=&quot;add-bubble&quot;&gt;&lt;/div&gt;</div>
+        &lt;pre&gt;+this is  a line in the diff&lt;/pre&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+</code>
+</pre>
+            </div>
+            <div class="pull-left clearfix delay">
+                <!--?prettify lang=html?-->
+<pre class="prettyprint">
+<code>
+&lt;tr&gt;
+    &lt;td class=&quot;line_number linkable-line-number&quot;&gt;5&lt;/td&gt;
+    &lt;td class=&quot;line_number linkable-line-number&quot;&gt;7&lt;/td&gt;
+    &lt;td width=&quot;100%&quot;&gt;
+        &lt;b class=&quot;add-bubble&quot;&gt;&lt;/b&gt;
+        &lt;pre&gt;+this is  a line in the diff&lt;/pre&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+</code>
+</pre>
+            </div>
+        </div>
+
+<!-- slide 26 -->
+        <div class="step slide" data-x="12300" data-y="1500" data-rotate="90" data-scale="2">
+            <h2>Other Best Practices</h2>
+            <hr>
+            <ul>
+                <li class="step-first"><strong>Avoid inline images if possible</strong><br>one inline image can increase your pageload by as much at 25%</li>
+                <li class="step-second"><strong>Use image sprites</strong><br>Decrease number of HTTP requests by ~20%<br>Cut total pageload time by anywhere from ~16% to ~35%</li>
+                <li class="step-third">Optimize images</li>
+            </ul>
+        </div>
+
+<!-- slide 27 -->
+        <div id="step-27" class="step slide" data-x="17000" data-y="3000" data-scale="1">
+            <div class="viewport pull-left">
+                <img src="img/inspectocat.png" class="img-responsive animatein-left">
+            </div>
+            <div class="viewport pull-left clearfix ">
+                <div class="easein">
+                    <h3>GitHub Case Study - Outcome</h3>
+                    <p class="text-primary">Pageload Impact</p>
+                    <ul>
+                        <li class="step-first">Removing unnecessary &lt;div&gt;s and &lt;a&gt;s = 37% render speed improvement</li>
+                        <li class="step-second">Use of &lt;b&gt; to replace &lt;div&gt; = 3.5% render speed improvement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+<!-- slide -->
+        <div class="step slide" data-x="3700" data-y="-2800" data-rotate="90" data-scale="2">
+            <h1>References</h1>
+            <hr>
+            <ul>
+                <li>http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/</li>
+                <li>https://speakerdeck.com/jonrohan/githubs-css-performance</li>
+                <li>http://alistapart.com/article/improving-ux-through-front-end-performance </li>
+                <li>https://developers.google.com/speed/docs/best-practices/rendering</li>
+                <li>https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS</li>
+                <li>http://writegoodcode.com/</li>
+            </ul>
+        </div>
+        <!--
+        So to make a summary of all the possible attributes used to position presentation steps, we have:
+        * `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
+        the canvas in pixels; their default value is 0;
+        * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
+        the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
+        are exactly the same;
+        * `data-scale` - defines the scale of step element; default value is 1
+        These values are used by impress.js in CSS transformation functions, so for more information consult
+        CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
+        -->
+        <div id="overview" class="step" data-x="10000" data-y="9500" data-scale="40">
+        </div>
+    </div>
+    <!--
+    Hint is not related to impress.js in any way.
+    But it can show you how to use impress.js features in creative way.
+    When the presentation step is shown (selected) its element gets the class of "active" and the body element
+    gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
+    so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
+    the id of `bored`) is active, body element gets a class of `impress-on-bored`.
+    This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
+    the first step of presentation is visible for a couple of seconds.
+    ...
+    And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
+    It's just a quick and dirty workaround to get different hint text for touch devices.
+    In a real world it should be at least placed in separate JS file ... and the touch content should be
+    probably just hidden somewhere in HTML - not hard-coded in the script.
+    Just sayin' ;)
+    -->
+    <div class="hint">
+        <p>Use a spacebar or arrow keys to navigate</p>
+    </div>
+    <script>
+    if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+    </script>
+    <script src="js/impress.js"></script>
+    <script src="js/impressConsole.js"></script>
+    <script>
+    impress().init();
+    impressConsole().init();
+    //impressConsole().open(); // If you want them to open automatically
+    </script>
+    <!--script type="text/javascript" src="js/prettify.js"></script-->
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=sunburst"></script >
+</body>
+</html>

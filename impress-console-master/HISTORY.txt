@@ -1,0 +1,65 @@
+HISTORY
+=======
+
+1.2 - Unreleased
+----------------
+
+- Using the name "console" for the console cause a name conflict. It has been
+  renamed to "impressConsole".
+  
+
+1.1 - 2013-02-19
+----------------
+
+- Fixed a bug with Firefox, where the console on opening would have the
+  upper right corner in the center of the slide.
+  
+
+1.0 - 2012-12-19
+----------------
+
+- Added a "Ready/Working" status flag.
+
+- The open() call now takes a parameter, css, so you can specify another
+  css-file used for the console. This is primarily used so that you can have 
+  so you can include impress-console in tools and themes with more freedom.
+
+- Made the default font-size smaller, as I tended to have to zoom out.
+
+- Changed the key to open the console from <N> to <P>, because Landslide uses
+  <N> to toggle slide numbers.
+
+- Improved key-handling (with inspiration from Landslide, once again) so that
+  modified key-presses doesn't trigger slide changes in the console-window.
+  
+- Added a registerKeyEvent convenience function.
+
+- Better behavior on Firefox.
+
+- <space> is now the default mover to "next". If there is more text that can
+  be displayed in the notes-window, <space> will scroll down. Otherwise it
+  will move to the next slide.
+
+- The iframe blocker didn't actually block all of the iframes.
+
+
+1.0b2 - 2012-04-01
+------------------
+
+- The "pre-loading" of notes loaded the wrong notes.
+
+- Added key handlers in the console, so that navigation works even if the
+  console window has focus. Tab is not supported, as that will trigger 
+  the next slide also when you Alt-Tab in some browsers, which is extremely
+  annoying.
+  
+- The windows in the presenter console will now move in sync with the main
+  window (unless you move to a step before the previous one has finished
+  moving, in which case the presenter console will fall behind).
+  
+
+1.0b1 - 2012-03-30
+------------------
+
+- Initial release.
+
